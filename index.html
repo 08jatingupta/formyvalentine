@@ -8,6 +8,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .photo-frame {
+    width: 260px;        /* apne design ke hisaab se */
+    height: 260px;
+    border-radius: 16px;
+    overflow: hidden;   /* IMPORTANT */
+    border: 2px solid #ff2f5e;
+}
+
+.photo-placeholder {
+    width: 100%;
+    height: 100%;
+}
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* 🔥 MAGIC LINE */
+    object-position: center;
+    display: block;
+}
+    </style>
 </head>
 <body>
     <!-- Floating Hearts Background -->
@@ -33,19 +56,22 @@
                     </div>
                 </div>
             </div>
-            <h1 class="main-title">Happy Valentine's Day</h1>
-            <p class="subtitle">To the most beautiful person in my world</p>
+            <h1 class="main-title">Happy Valentine's Day My Love</h1>
+            <p class="subtitle">To the most beautiful person in my Life</p>
         </section>
 
         <!-- Love Letter Section -->
         <section class="section hidden" id="letter">
             <div class="content-card fade-in">
-                <h2 class="section-title script">My Dearest Love,</h2>
+                <h2 class="section-title script">My Dearest Love (Shivi),</h2>
                 <div class="letter-content">
-                    <p>Every moment with you feels like a beautiful dream I never want to wake up from.</p>
-                    <p>You are the sunshine that brightens my darkest days, the laughter that fills my heart with joy, and the love that makes every day worth living.</p>
-                    <p>Thank you for being you — perfectly imperfect, wonderfully unique, and absolutely mine.</p>
-                    <p class="signature">Forever yours,<br><span class="script">Your Love</span></p>
+                    <p>I wish I could say Happy Valentine’s Daywhile holding your hand, but for now, these words will have to do.</p>
+                    <p>Even from miles away,you are still my comfort,my calm, and my favorite thought of the day.</p>
+                    <p>Loving you isn’t loud or perfect, it’s quiet, steady, and feels right in the simplest moments— like smiling at my phone because of you.</p>
+                    <p>I miss you, yes, but more than that, I’m grateful for you. For your presence in my life, even from afar.</p>
+                    <p>This Valentine’s Day,I just want you to know one thing— distance hasn’t changed how I feel, it has only shown me how real this love is.</p>
+                    <p></p>
+                    <p class="signature">Happy Valentine’s Day,,<br><span class="script">to the one my heart keeps choosing 🤍</span></p>
                 </div>
                 <button class="next-btn" onclick="nextSection('memories')">
                     Continue <span class="arrow">→</span>
@@ -60,20 +86,17 @@
                 <div class="photo-gallery">
                     <div class="photo-frame">
                         <div class="photo-placeholder">
-                            <span>📷</span>
-                            <p>Our First Date</p>
+                             <img src="/images/img1.jpeg" alt="">
                         </div>
                     </div>
                     <div class="photo-frame">
                         <div class="photo-placeholder">
-                            <span>📷</span>
-                            <p>That Amazing Trip</p>
+                            <img src="/images/img3.png" alt="">
                         </div>
                     </div>
                     <div class="photo-frame">
                         <div class="photo-placeholder">
-                            <span>📷</span>
-                            <p>Just Being Us</p>
+                            <img src="/images/img5.png" alt="">
                         </div>
                     </div>
                 </div>
