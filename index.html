@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Music Toggle -->
+    <button class="music-toggle" id="musicToggle">
+        <span class="music-icon">🎵</span>
+    </button>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        
+        <!-- Landing Section -->
+        <section class="landing-section active" id="landing">
+            <div class="envelope-container">
+                <div class="envelope" id="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-body">
+                        <div class="letter">
+                            <p class="script">Click to Open</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="main-title">Happy Valentine's Day</h1>
+            <p class="subtitle">To the most beautiful person in my world</p>
+        </section>
+
+        <!-- Love Letter Section -->
+        <section class="section hidden" id="letter">
+            <div class="content-card fade-in">
+                <h2 class="section-title script">My Dearest Love,</h2>
+                <div class="letter-content">
+                    <p>Every moment with you feels like a beautiful dream I never want to wake up from.</p>
+                    <p>You are the sunshine that brightens my darkest days, the laughter that fills my heart with joy, and the love that makes every day worth living.</p>
+                    <p>Thank you for being you — perfectly imperfect, wonderfully unique, and absolutely mine.</p>
+                    <p class="signature">Forever yours,<br><span class="script">Your Love</span></p>
+                </div>
+                <button class="next-btn" onclick="nextSection('memories')">
+                    Continue <span class="arrow">→</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Our Memories Section -->
+        <section class="section hidden" id="memories">
+            <div class="content-card fade-in">
+                <h2 class="section-title">Our Beautiful Moments</h2>
+                <div class="photo-gallery">
+                    <div class="photo-frame">
+                        <div class="photo-placeholder">
+                            <span>📷</span>
+                            <p>Our First Date</p>
+                        </div>
+                    </div>
+                    <div class="photo-frame">
+                        <div class="photo-placeholder">
+                            <span>📷</span>
+                            <p>That Amazing Trip</p>
+                        </div>
+                    </div>
+                    <div class="photo-frame">
+                        <div class="photo-placeholder">
+                            <span>📷</span>
+                            <p>Just Being Us</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="next-btn" onclick="nextSection('reasons')">
+                    Continue <span class="arrow">→</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Reasons I Love You -->
+        <section class="section hidden" id="reasons">
+            <div class="content-card fade-in">
+                <h2 class="section-title">Reasons Why I Love You</h2>
+                <div class="reasons-list">
+                    <div class="reason-item">
+                        <span class="reason-number">01</span>
+                        <p>Your beautiful smile that lights up my entire world</p>
+                    </div>
+                    <div class="reason-item">
+                        <span class="reason-number">02</span>
+                        <p>The way you laugh at my silly jokes</p>
+                    </div>
+                    <div class="reason-item">
+                        <span class="reason-number">03</span>
+                        <p>Your kind heart and caring soul</p>
+                    </div>
+                    <div class="reason-item">
+                        <span class="reason-number">04</span>
+                        <p>How you make ordinary moments extraordinary</p>
+                    </div>
+                    <div class="reason-item">
+                        <span class="reason-number">05</span>
+                        <p>Your strength, courage, and beautiful spirit</p>
+                    </div>
+                    <div class="reason-item">
+                        <span class="reason-number">∞</span>
+                        <p>And infinite more reasons that grow every single day</p>
+                    </div>
+                </div>
+                <button class="next-btn" onclick="nextSection('quiz')">
+                    Continue <span class="arrow">→</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Love Quiz -->
+        <section class="section hidden" id="quiz">
+            <div class="content-card fade-in">
+                <h2 class="section-title">A Little Question...</h2>
+                <div class="quiz-container">
+                    <p class="quiz-question">Will you be my Valentine forever?</p>
+                    <div class="quiz-buttons">
+                        <button class="quiz-btn yes-btn" onclick="handleYes()">Yes! ❤️</button>
+                        <button class="quiz-btn no-btn" id="noBtn" onmouseover="moveNoButton()">No</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Message -->
+        <section class="section hidden" id="final">
+            <div class="content-card fade-in celebration">
+                <div class="fireworks"></div>
+                <h2 class="section-title script celebration-title">I Knew It! 💕</h2>
+                <p class="celebration-text">You've made me the happiest person alive!</p>
+                <div class="heart-burst">
+                    <span class="burst-heart">❤️</span>
+                    <span class="burst-heart">💖</span>
+                    <span class="burst-heart">💕</span>
+                    <span class="burst-heart">💗</span>
+                    <span class="burst-heart">💝</span>
+                </div>
+                <p class="final-message">
+                    Thank you for being mine. Here's to forever together, creating beautiful memories, sharing countless laughs, and loving each other endlessly.
+                </p>
+                <p class="signature script">Happy Valentine's Day, My Love! 💑</p>
+                <button class="restart-btn" onclick="restart()">
+                    ↻ Experience Again
+                </button>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
